@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio 7.1", "Laboratorio 7.1\Laboratorio 7.1.csproj", "{328A60BF-62B1-416B-B052-FB71F166ECDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio 7.2", "Laboratorio 7.2\Laboratorio 7.2.csproj", "{72CEDE1D-56C8-449D-9A32-FCA54326F5C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328A60BF-62B1-416B-B052-FB71F166ECDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328A60BF-62B1-416B-B052-FB71F166ECDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328A60BF-62B1-416B-B052-FB71F166ECDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328A60BF-62B1-416B-B052-FB71F166ECDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CEDE1D-56C8-449D-9A32-FCA54326F5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CEDE1D-56C8-449D-9A32-FCA54326F5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CEDE1D-56C8-449D-9A32-FCA54326F5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CEDE1D-56C8-449D-9A32-FCA54326F5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA1DA661-D1C6-4F74-B66C-26ED7B34FE72}
+	EndGlobalSection
+EndGlobal
