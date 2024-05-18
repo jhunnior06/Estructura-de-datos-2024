@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+
 namespace Laboratorio_8._1
 {
     public partial class Form1 : Form
@@ -11,43 +15,43 @@ namespace Laboratorio_8._1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
         }
 
         static bool EsPrimo(int numero)
         {
-            if (numero <= 1) return false;
             for (int i = 2; i < numero; i++)
             {
-                if (numero % i == 0)
+                if ((numero % i) == 0)
                 {
+                    // No es primo :(
                     return false;
                 }
             }
+            // Es primo :)
             return true;
         }
 
         private void btnAgregarNumero_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtAgregarNumero.Text, out int numero))
+            lista.Add(int.Parse(txtNumero.Text));
+            txtLista1.Clear();
+            foreach (var item in lista)
             {
-                lista.Add(numero);
-                txtLista1.AppendText(numero.ToString() + Environment.NewLine);
-                txtAgregarNumero.Clear();
-                txtAgregarNumero.Focus();
+                txtLista1.AppendText(item.ToString() + Environment.NewLine);
             }
-            else
-            {
-                MessageBox.Show("Por favor, ingrese un número válido.");
-            }
+            txtNumero.Clear();
+            txtNumero.Focus();
         }
 
-        private void btnBuscarPrimos_Click(object sender, EventArgs e)
+        private void btnPrimos_Click(object sender, EventArgs e)
         {
             var lista2 = new List<int>();
 
             foreach (var item in lista)
             {
-                if (EsPrimo(item))
+                var p = EsPrimo(item);
+                if (p)
                 {
                     lista2.Add(item);
                 }
@@ -59,7 +63,10 @@ namespace Laboratorio_8._1
                 txtLista2.AppendText(item.ToString() + Environment.NewLine);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-
-
